@@ -10,7 +10,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh; /* Viewport-Height */
-    color:white;
+    color: white;
+
     
     
 }
@@ -34,6 +35,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    font-size: 1.3rem;
     
 }
 .link-container{
@@ -47,7 +49,7 @@ body {
     border-radius: 15px;
     background-color: rgba(0,0,0,.8);
     padding: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2em;
     margin: 0px;
 }
 h1.bookmark-title{
@@ -69,3 +71,42 @@ ul.list > li > a:hover {
     transition: all .25 ease-in;
 }
 /* Strg + ö = Terminal*/
+@media only screen and  (max-width: 960px) {
+    .body {
+        background-image: url('matrix_pixabay1799659@geralt.jpg') ;
+        height: 100%;
+    }
+    .Window {
+        padding-top: 2em;
+    }
+    .clock {
+        margin-bottom: 20px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: .8em;
+        font-size: 1.5rem;
+    }
+    
+    .link-container {
+        width: 50%;
+        min-height: auto;
+        /* min-height: fit-content */
+    }
+    
+    .container:last-child{
+        margin-bottom: 1em;
+    }
+    h1.bookmark-title {
+        margin-top: 0;
+        margin-bottom: .5em;
+        font-size: 1.6em;
+    }
+    ul.list {
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+}
+
